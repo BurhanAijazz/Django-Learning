@@ -2,6 +2,8 @@
 <html>
 <body>
 
+{% include "mymenu.html" with me="Burhan" sponsor="W3SCHOOLS" %}
+
 <ul>
   {% for member in myMembers%}
     <li>{{member.firstname}}</li>
@@ -10,3 +12,5 @@
 
 </body>
 </html>
+
+{% include "footer.html" %}
